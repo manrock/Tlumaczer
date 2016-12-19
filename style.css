@@ -5,7 +5,7 @@ body
         font-family: 'Lato', sans-serif;
 }
 
-#top
+.topp
 {
     width: 100%;
     background-color: #303030;
@@ -213,4 +213,13 @@ a.menulink
 {
     color: #ffffff;
     text-decoration: none;  
+}
+
+.sticky
+{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
 }
