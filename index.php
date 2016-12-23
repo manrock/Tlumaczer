@@ -31,12 +31,16 @@
     </head>
     <body>
         <div class="topp">
+
             <div id="log"><a href="index.php?menu=2" class="menulink">Zaloguj się</a>  |  <a href="index.php?menu=9" class="menulink">Załóż konto</a></div>
+
             </div>
         <div id="box">
+
             
             <a href="#" class="scrollup"></a>
             
+
             <div id="logo"><a href="index.php"><img src="img/tlo.png"/></a></div>
             
             <div id="menu">
@@ -61,12 +65,13 @@
             </div>
 
             <div id="news">
+
                 
                 <?php
                if(isset($_GET['menu'])){
                    switch($_GET['menu']){
                        case 1: include('home.php'); break;
-                       case 2: include('logowaniemenu.php'); break;
+                       case 2: include('./logowaniemenu.php.php'); break;
                        case 3: include('kontaktmenu.php'); break;
                        case 4: include('dodajmenu.php'); break;
                        case 5: include('tlumaczmenu.php'); break;
@@ -129,28 +134,5 @@
 	});
 	});
         </script>    
-
-        
-<!--$(document).ready(function() {
-//   var stickyNavTop = $('.nav').offset().top;
-//
-//   var stickyNav = function(){
-//   var scrollTop = $(window).scrollTop();
-
-//   if (scrollTop > stickyNavTop) { 
-//      $('.nav').addClass('sticky');
-//   } else {
-//      $('.nav').removeClass('sticky');
-//    }
-//   };
-
-//   stickyNav();
-
-//   $(window).scroll(function() {
-//      stickyNav();
-//   });
-//   });-->
-
-
     </body>
 </html>
