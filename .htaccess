@@ -1,0 +1,26 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule dodawanie-lub-tlumaczenie-tekstow index.php
+RewriteRule strona-domowa-serwisu index.php?menu=1
+RewriteRule logowanie-do-serwisu index.php?menu=2
+RewriteRule kontakt-z-administracja index.php?menu=3
+RewriteRule dodawanie-tekstow-do-tlumaczenia index.php?menu=4
+RewriteRule tlumaczenie-tekstow index.php?menu=5
+RewriteRule lista-przetlumaczonych-tekstow index.php?menu=6
+RewriteRule logowanie-pomyslnie-do-serwisu index.php?menu=7
+RewriteRule rejesracja-uzytkownika-w-serwisie index.php?menu=9
+RewriteRule powitanie-w-serwisie index.php?menu=10
+RewriteRule regulamin-strony index.php?menu=11
+RewriteRule wyslanie-wiadomosci-do-administracji index.php?menu=12
+RewriteRule dodano-tekst-do-listy index.php?menu=13
+RewriteRule zaloguj-sie-zeby-korzystac-z-wszystkich-opcji index.php?menu=14
+RewriteRule tlumaczenie-tekstow-lista index.php?menu=15
+RewriteRule tlumaczenie-wybranego-tekstu index.php?menu=16
+RewriteRule zaloguj-sie-zeby-korzystac-z-tej-opcji index.php?menu=17
+RewriteRule usuniecie-tekstu index.php?menu=18
+RewriteRule usuniecie-tlumaczenia index.php?menu=19

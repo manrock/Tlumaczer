@@ -1,3 +1,8 @@
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
 input[type=text],
 input[type=password]
 {
@@ -76,6 +81,14 @@ textarea:focus
     border: 2px solid #a5cda5;
     background-color: #e9f3e9;
     color: #428c42;
+}
+
+.linia2
+{
+    height: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #444444;
 }
 
 input::-webkit-input-placeholder

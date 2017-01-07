@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>TextTranslaredWeb</title>
+        <title>Strona główna</title>
         
         <link rel="stylesheet" href="style.css" type="text/css" />
         <link rel="stylesheet" href="css/fontello.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Slabo+27px&amp;subset=latin-ext" rel="stylesheet">
+        
         <script src="jquery-3.1.1.min.js"></script>
         <script src="jquery.scrollTo.min.js"></script>
         
@@ -27,14 +28,27 @@
 		}
 		);
 	</script>
-
     </head>
+    
     <body>
         <div class="topp">
-            <div id="log">Zalogowano! |<a href="logout.php" class="menulink"> <b>Wyloguj!</b></a></div>
+            <div id="log">
+                <?php 
+                    session_start();
+                    if (!isset($_SESSION['zalogowany']))
+                    {
+                        echo"<a href='index.php?menu=2' class='menulink'>Zaloguj się</a>  |  <a href='index.php?menu=9' class='menulink'>Załóż konto</a>";
+                        exit();
+                    } else
+                    {
+                        echo "Zalogowano! Witaj ".$_SESSION['user']." |<a href='logout.php' class='menulink'> <b> Wyloguj!</b></a>";
+                    }
+                ?>
+        
             </div>
+        </div>
+        
         <div id="box">
-            
             <a href="#" class="scrollup"></a>
             
             <div id="logo"><a href="index2.php"><img src="img/tlo.png"/></a></div>
@@ -60,8 +74,7 @@
                 </a>    
             </div>
 
-            <div id="news">
-                
+            <div id="news">                
                 <?php
                if(isset($_GET['menu'])){
                    switch($_GET['menu']){
@@ -76,13 +89,15 @@
                        case 9: include('rejestracja.php'); break;
                        case 10: include('witamy.php'); break;
                        case 11: include('regulamin.php'); break;
+                       case 12: include('wiadomoscwyslana.php'); break;
                        default: include('home.php'); break;
                  }
-              } else {
+              } 
+              else 
+              {
                   include('home.php');
-             }
+              }
                 ?>  
-
             </div>
 
             <div id="media">
@@ -107,7 +122,6 @@
             <div id="stopka">Copyright &copy; by Przemysław Mackiewicz 2016-2017. Wszystkie prawa zastrzeżone.</div>
         </div>
         
-        <script src="jquery-3.1.1.min.js"></script>
         <script>
 	$(document).ready(function() {
 	var NavY = $('.topp').offset().top;
@@ -129,28 +143,5 @@
 	});
 	});
         </script>    
-
-        
-<!--$(document).ready(function() {
-//   var stickyNavTop = $('.nav').offset().top;
-//
-//   var stickyNav = function(){
-//   var scrollTop = $(window).scrollTop();
-
-//   if (scrollTop > stickyNavTop) { 
-//      $('.nav').addClass('sticky');
-//   } else {
-//      $('.nav').removeClass('sticky');
-//    }
-//   };
-
-//   stickyNav();
-
-//   $(window).scroll(function() {
-//      stickyNav();
-//   });
-//   });-->
-
-
     </body>
 </html>

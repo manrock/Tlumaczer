@@ -3,15 +3,20 @@
     <head>
         <meta charset="UTF-8">  
         <title>Regulamin</title>
+        
+        <meta name="description" content="Regulamin serwisu" />
+	<meta name="keywords" content="regulamin" />
+        
         <script src="jquery-3.1.1.min.js"></script>  
        
-        <link rel="stylesheet" href="stylelog.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Slabo+27px&amp;subset=latin-ext" rel="stylesheet">
     </head>
     
     <body>
         <spam class="naglowki">Regulamin</spam>
         <div class="linia"></div>
+        
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc suscipit lacus ut nibh aliquam pharetra. Suspendisse dignissim aliquam arcu at malesuada. Nulla magna ligula, condimentum sed ante vitae, scelerisque dictum dui. Nam elementum, nibh et pretium sodales, tellus tortor semper leo, non sagittis sapien augue sit amet dui. Nam quis sollicitudin enim. Nunc ipsum diam, sodales sit amet dapibus quis, dictum eu sapien. Sed ut nisl dolor. Nulla eu sem ultricies, posuere massa sit amet, pellentesque augue. Nam id placerat metus. Pellentesque aliquam ipsum magna, vitae eleifend arcu imperdiet a. Curabitur consectetur, nulla vel dapibus sodales, justo metus semper nibh, eget ullamcorper orci orci nec purus. Praesent et quam arcu. Aenean interdum mauris ligula, et mattis augue facilisis vitae.
         </br></br>
         Integer cursus dui vitae eros consectetur condimentum. Sed ullamcorper efficitur magna id sagittis. Vestibulum interdum convallis tellus cursus eleifend. Donec quam lorem, mollis ut vestibulum eget, rutrum quis purus. Mauris sit amet tincidunt turpis. Maecenas eu sem sit amet tellus dapibus sodales. In non urna nec purus commodo auctor. Aenean metus odio, auctor sed turpis sed, cursus luctus magna. Ut vel venenatis purus. Aliquam vitae condimentum nulla, at convallis sem. Praesent suscipit faucibus odio, eu interdum orci fermentum nec. Nulla volutpat malesuada aliquam.
@@ -30,13 +35,8 @@
         </br></br>
         Nam vitae libero interdum, imperdiet mi in, eleifend mauris. Praesent sed ultrices arcu. Vestibulum porta purus elit, ac suscipit lorem bibendum id. Duis et lacinia risus. Nulla a semper nisl. Vivamus in orci vel est volutpat molestie a a diam. Phasellus ornare, arcu ut suscipit auctor, urna eros ullamcorper justo, at convallis elit sapien vitae urna. Praesent lorem orci, faucibus et venenatis nec, tempus a ex. Morbi id metus eu diam posuere maximus. Duis hendrerit ipsum sit amet odio sollicitudin, eget tempus est dapibus. Vivamus condimentum volutpat tristique. Aenean in condimentum leo.
         </br></br>
-        Ut ultrices quis odio eu accumsan. Fusce rutrum massa lectus, vitae porta magna vulputate ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec facilisis enim non magna ullamcorper sodales. Duis ac turpis leo. Proin eu viverra massa. Suspendisse elementum erat venenatis volutpat faucibus. Cras eleifend dui non velit ullamcorper tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer luctus dictum dolor. Proin eleifend metus non urna vehicula, et condimentum augue dapibus. Sed consequat quis quam non cursus. Morbi magna orci, vehicula at tempor a, pulvinar id lectus.
-	
-        
-        
-        
-    </body>
-    
+        Ut ultrices quis odio eu accumsan. Fusce rutrum massa lectus, vitae porta magna vulputate ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec facilisis enim non magna ullamcorper sodales. Duis ac turpis leo. Proin eu viverra massa. Suspendisse elementum erat venenatis volutpat faucibus. Cras eleifend dui non velit ullamcorper tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer luctus dictum dolor. Proin eleifend metus non urna vehicula, et condimentum augue dapibus. Sed consequat quis quam non cursus. Morbi magna orci, vehicula at tempor a, pulvinar id lectus. 
+    </body>   
 </html>
 
 
